@@ -9,4 +9,4 @@ It is a fun interactive demo suitable for all ages.
 # Credits
 Thanks to everyone in the Stanford Optical Society for helping me build this, and to previous members who built the first version of the laser harp!
 
-
+You can learn more about the Stanford Optical Society, and all of the work that we do at https://photons.stanford.edu
