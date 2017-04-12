@@ -3,13 +3,15 @@ The laser harp is a harp that uses lasers in place of strings. It is built to vi
 
 ![Assembled Laser Harp](https://github.com/mcleung/LaserHarp/blob/master/Images/AssembledHarp.jpg)
 
+![Laser Harp in action](https://github.com/mcleung/LaserHarp/blob/master/Images/HarpInAction.jpg)
+
 The laser harp works best in constant lighting conditions, with the cover closed, as the laser beams then provide nice visual feedback when reflected of the harpist’s hands. Fog machines can also help visualize the beams but too much fog can trigger the harp sounds (the beam becomes too scattered and the sensors detect that as a broken beam).
 
 It is a fun interactive demo suitable for all ages.
 
-## Assembly Instructions
+## [Assembly Instructions](https://github.com/mcleung/LaserHarp/blob/master/AssemblyInstructions.md)
 
-## Constructing your own Harp
+## [Constructing your own Harp](https://github.com/mcleung/LaserHarp/blob/master/ConstructionInstructions.md)
 
 
 # Credits
