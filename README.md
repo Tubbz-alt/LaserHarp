@@ -7,6 +7,10 @@ The laser harp works best in constant lighting conditions, with the cover closed
 
 It is a fun interactive demo suitable for all ages.
 
+## Assembly Instructions
+
+## Constructing your own Harp
+
 
 # Credits
 Thanks to everyone in the Stanford Optical Society for helping me build this, and to previous members who built the first version of the laser harp!
