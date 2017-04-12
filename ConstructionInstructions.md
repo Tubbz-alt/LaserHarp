@@ -14,26 +14,27 @@ Where applicable, we have included part numbers from specific manufacturers.
   - 2 pieces: 1 x 4 x 36 inch (long sidewalls)
   - 2 pieces: 1 x 4 x 16.5 inch (short sidewalls)
 - Around 20 pieces: 1.5” wood screws to hold wood together
-- Plastic-coated steel rail, 1 inch OD (McMaster Carr Part number: [2534T13](https://www.mcmaster.com/#catalog/123/1964/=175omqx) )
+- Plastic-coated steel rail, 1 inch OD (McMaster Carr: [2534T13](https://www.mcmaster.com/#catalog/123/1964/=175omqx))
   - 2 pieces: 30 inches in length (side bars)
   - 1 piece: 32 inches in length (for crossbar)
-- 2 pieces: round flange rail end (McMaster Carr Part number: [2534T82](https://www.mcmaster.com/#catalog/123/1964/=175omfq) )
-- 2 pieces: open tee rail connector (McMaster Carr Part number: [2534T22](https://www.mcmaster.com/#catalog/123/1964/=175omb7) )
-- 6 pieces: Carriage bolts and nuts
-- 2 pieces: Conduit straps (to attach rail to crossbar)
+- 2 pieces: round flange rail end (McMaster Carr: [2534T82](https://www.mcmaster.com/#catalog/123/1964/=175omfq))
+- 2 pieces: open tee rail connector (McMaster Carr: [2534T22](https://www.mcmaster.com/#catalog/123/1964/=175omb7))
+- 6 pieces: Carriage bolts and nuts (McMaster Carr: [93180A220](https://www.mcmaster.com/#carriage-bolts/=1760sma))
+- 2 pieces: Routing clamps (McMaster Carr: [8874T43](https://www.mcmaster.com/#pipe-routing-clamps/=1760tv2))
 - Wood glue
 
 Note: decorations are made using a laser cutter and vinyl cutter
 
 ### Electronics
-- 8 pieces: 5mW 532nm laser diodes (color is not important, but they should operate on 5V power supply.)
-- 8 pieces: conduit straps or other mounting hardware to attach lasers onto the crossbar.
+- 8 pieces: 5mW 532nm laser diodes (color is not important, but they should operate on 5V power supply. We used [these ones](https://m.dhgate.com/product/50mw-532nm-green-laser-diode-module-line/158930720.html))
+- 8 pieces: Routing Clamps or other mounting hardware to attach lasers onto the crossbar. (McMaster Carr: [8874T14](https://www.mcmaster.com/#pipe-routing-clamps/=1760xm5))
 - 16 pieces: screws for attaching conduit straps (should not be thicker than the crossbar, we used ⅜)
-- Power supply for the lasers. We recommend a 1.5 to 2A supply (each laser uses ~100mA of power, and for safety, we assume: 8 * 100mA + safety factor
-- Arduino Nano v3
-- MP3/audio board compatible with the Arduino ([See gravitech](http://www.gravitech.us/mp3pladforar.html) )
+- Power supply for the lasers. We recommend a 1.5 to 2A supply (each laser uses ~100mA of power; we assume: 8 * 100mA + safety factor (Digikey: [993-1296-ND](https://www.digikey.com/product-detail/en/phihong-usa/PSC15A-050/993-1296-ND/5247140))
+- Arduino Nano v3 (Digikey: [1050-1001-ND](https://www.digikey.com/product-detail/en/arduino/A000005/1050-1001-ND/2638989))
+- MP3/audio board compatible with the Arduino (Gravitech: [MP3-4NANO](http://www.gravitech.us/mp3pladforar.html))
 - Breadboard
-- 8 pieces: photo-resistors
+- 8 pieces: photo-resistors (SparkFun: [SEN-09088](https://www.sparkfun.com/products/9088))
+- 8 pieces: 10kOhm resistors
 - USB power supply, including cable (used to power the arduino + audio board)
 - Audio cable (3.5mm male to male)
 - Guitar amp with a 3.5mm line in port
@@ -67,18 +68,30 @@ Notes:
 
 
 ## Constructing the electronics
-1. Evenly space and secure all lasers to the crossbar using conduit straps.
+1. Upload Arduino code found at https://github.com/mcleung/LaserHarp/blob/master/Arduino/LaserHarp/LaserHarp.ino
 
-2. Affix each photoresistor to a small piece of cardboard
+2. Connect Arduino onto the MIDI shield.
 
-3. Using the push pins, attached the cardboard/photoresistor to  larger piece of cardboard. The push pins give the flexibility to move the photoresistors for alignment with the lasers.
+3. Connect midi shield output to speakers.
+
+4. Evenly space and secure all lasers to the crossbar using conduit straps. We found that something between 1.5 to 2.5 inches works well.
+
+5. Solder all the laser power supplies in parralel, and connect to the 5V 2A supply.
+
+6. Affix each photoresistor to a small piece of cardboard.
+
+7. Photoresistors should be connected to the Arduino as active low (pull-up) sensors. They should be wired as follows. 5V supply - 10k resistor(or other pull up resistor) - wire connecting back to Analog input - photoresistor - ground.
+
+8. Turn on the lasers by connecting the power supply, and align detectors on cardboard piece.
+
+9. Using the push pins, attached the cardboard/photoresistor to  larger piece of cardboard. The push pins give the flexibility to move the photoresistors for alignment with the lasers. 
+  Beware! Avoid staring into the laser or direct reflections. Remove all jewlery and other shiny accessories.
 
 ![Laser aligned on photoresistor](https://github.com/mcleung/LaserHarp/blob/master/Images/LaserOnDetector.jpg)
 
-4. Connect the lasers, power supply, photoresistors, arduino, audio board, and guitar amp according the the schematic below.
 
 Notes:
   The chip on the audio board does not just support MP3 but also synthesizing sound based on MIDI commands. We are generating MIDI signals with the Arduino and playing them with the audio board.
 
 ## Constructing the software
-  The latest version of the Arduino code is found on this [Github repository.](https://github.com/mcleung/LaserHarp/tree/master/Arduino/LaserHarp)
+  The latest version of the Arduino code is found on this [Github repository](https://github.com/mcleung/LaserHarp/tree/master/Arduino/LaserHarp). If you have any changes or suggestions, please let us know so we can update it!
