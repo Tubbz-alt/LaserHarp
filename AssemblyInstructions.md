@@ -32,7 +32,7 @@ Note: Be sure to set up the laser harp under the lighting conditions where it wi
 
 6. Adjust the photo-resistor positions such that the lasers are aligned (i.e., the laser beam overlaps the photo-resistor).
 
-![Powersupply](https://github.com/mcleung/LaserHarp/blob/master/Images/Powersupply.jpg)
+![Laser aligned on photoresistor](https://github.com/mcleung/LaserHarp/blob/master/Images/LaserOnDetector.jpg)
 
 7. Connect the Arduino to the speaker.
 
