@@ -14,11 +14,11 @@ Where applicable, we have included part numbers from specific manufacturers.
   - 2 pieces: 1 x 4 x 36 inch (long sidewalls)
   - 2 pieces: 1 x 4 x 16.5 inch (short sidewalls)
 - Around 20 pieces: 1.5” wood screws to hold wood together
-- Plastic-coated steel rail, 1 inch OD (McMaster Carr Part number: 2534T13)[https://www.mcmaster.com/#catalog/123/1964/=175omqx]
+- Plastic-coated steel rail, 1 inch OD (McMaster Carr Part number: [2534T13](https://www.mcmaster.com/#catalog/123/1964/=175omqx) )
   - 2 pieces: 30 inches in length (side bars)
   - 1 piece: 32 inches in length (for crossbar)
-- 2 pieces: round flange rail end (McMaster Carr Part number: 2534T82)[https://www.mcmaster.com/#catalog/123/1964/=175omfq]
-- 2 pieces: open tee rail connector (McMaster Carr Part number: 2534T22)[https://www.mcmaster.com/#catalog/123/1964/=175omb7]
+- 2 pieces: round flange rail end (McMaster Carr Part number: [2534T82](https://www.mcmaster.com/#catalog/123/1964/=175omfq) )
+- 2 pieces: open tee rail connector (McMaster Carr Part number: [2534T22](https://www.mcmaster.com/#catalog/123/1964/=175omb7) )
 - 6 pieces: Carriage bolts and nuts
 - 2 pieces: Conduit straps (to attach rail to crossbar)
 - Wood glue
@@ -31,7 +31,7 @@ Note: decorations are made using a laser cutter and vinyl cutter
 - 16 pieces: screws for attaching conduit straps (should not be thicker than the crossbar, we used ⅜)
 - Power supply for the lasers. We recommend a 1.5 to 2A supply (each laser uses ~100mA of power, and for safety, we assume: 8 * 100mA + safety factor
 - Arduino Nano v3
-- MP3/audio board compatible with the Arduino (See gravitech)[http://www.gravitech.us/mp3pladforar.html]
+- MP3/audio board compatible with the Arduino ([See gravitech](http://www.gravitech.us/mp3pladforar.html) )
 - Breadboard
 - 8 pieces: photo-resistors
 - USB power supply, including cable (used to power the arduino + audio board)
@@ -81,4 +81,4 @@ Notes:
   The chip on the audio board does not just support MP3 but also synthesizing sound based on MIDI commands. We are generating MIDI signals with the Arduino and playing them with the audio board.
 
 ## Constructing the software
-  The latest version of the Arduino code is found on this (Github repository.)[https://github.com/mcleung/LaserHarp/tree/master/Arduino/LaserHarp]
+  The latest version of the Arduino code is found on this [Github repository.](https://github.com/mcleung/LaserHarp/tree/master/Arduino/LaserHarp)
