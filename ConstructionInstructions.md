@@ -66,9 +66,11 @@ Notes:
 - All the rail pieces, including the tee on the side bars, should be sized to fit within the box.
 - The cover simply lays on top of the box. Alternatively, the top piece could be screwed into position or hinges could be used. 
 
+## Constructing the software
+  The latest version of the Arduino code is found on this [Github repository](https://github.com/mcleung/LaserHarp/tree/master/Arduino/LaserHarp). If you have any changes or suggestions, please let us know so we can update it!
 
 ## Constructing the electronics
-1. Upload Arduino code found at https://github.com/mcleung/LaserHarp/blob/master/Arduino/LaserHarp/LaserHarp.ino
+1. Upload Arduino code found on this [Github repository](https://github.com/mcleung/LaserHarp/tree/master/Arduino/LaserHarp).
 
 2. Connect Arduino onto the MIDI shield.
 
@@ -93,5 +95,3 @@ Notes:
 Notes:
   The chip on the audio board does not just support MP3 but also synthesizing sound based on MIDI commands. We are generating MIDI signals with the Arduino and playing them with the audio board.
 
-## Constructing the software
-  The latest version of the Arduino code is found on this [Github repository](https://github.com/mcleung/LaserHarp/tree/master/Arduino/LaserHarp). If you have any changes or suggestions, please let us know so we can update it!
